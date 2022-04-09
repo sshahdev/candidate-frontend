@@ -1,0 +1,14 @@
+.candidate-wrapper {
+  background: #f4f4f4;
+  padding: 20px;
+}
+.candidate-wrapper button {
+  height: 46px;
+  width: fit-content;
+  padding: 0 24px;
+  border: none;
+  font-size: 18px;
+  color: #faf9f9;
+  background: dodgerblue;
+  border-radius: 6px;
+}

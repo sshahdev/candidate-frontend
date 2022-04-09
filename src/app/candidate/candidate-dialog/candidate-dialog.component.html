@@ -1,0 +1,148 @@
+<div class="main-modal-wrapper">
+  <h1 mat-dialog-title>Candidate Details</h1>
+  <form [formGroup]="candidateForm" (ngSubmit)="saveCandidateDetails()">
+    <mat-dialog-content class="mat-typography">
+      <label> Full Name</label>
+      <div class="inputs-wrapper">
+        <div class="input-field">
+          <input type="text" name="firstName" placeholder="First Name" formControlName="firstName">
+          <div class="invalid-feedback" *ngIf="submitted && myForm['firstName'].errors?.['required']">
+            <sup>*</sup>Enter your Firstname
+          </div>
+          <div class="invalid-feedback" *ngIf="submitted && myForm['firstName'].errors?.['minlength']">
+            <sup>*</sup>Name must be 2 characters long
+          </div>
+          <div class="invalid-feedback" *ngIf="submitted && myForm['firstName'].errors?.['pattern']">
+            <sup>*</sup>No special charcter allowed
+          </div>
+        </div>
+        <div class="input-field">
+          <input type="text" name="lastName" placeholder="Last Name" formControlName="lastName">
+          <!-- error block -->
+          <div class="invalid-feedback" *ngIf="submitted && myForm['lastName'].errors?.['required']">
+            <sup>*</sup>Please enter your Lastname
+          </div>
+          <div class="invalid-feedback" *ngIf="submitted && myForm['lastName'].errors?.['minlength']">
+            <sup>*</sup>Name must be 2 characters long
+          </div>
+          <div class="invalid-feedback" *ngIf="submitted && myForm['lastName'].errors?.['pattern']">
+            <sup>*</sup>No special character allowed
+          </div>
+        </div>
+      </div>
+
+      <div class="inputs-wrapper top-margin">
+        <div class="input-field">
+          <label> Email Address</label>
+          <input type="email" name="email" placeholder="Email Address" formControlName="email">
+          <!-- error block -->
+          <div class="invalid-feedback" *ngIf="submitted && myForm['email'].errors?.['required']">
+            <sup>*</sup>Please enter your email
+          </div>
+          <div class="invalid-feedback" *ngIf="submitted && myForm['email'].errors?.['pattern']">
+            <sup>*</sup>Please enter valid email
+          </div>
+        </div>
+
+        <div class="input-field">
+          <label> Mobile Number</label>
+          <div class="mobile-wrapper">
+            <span class="prefix">
+              <select matNativeControl required>
+                <option value="+91">+91</option>
+                <option value="+27">+27</option>
+                <option value="+91">+355</option>
+                <option value="+27">+376</option>
+              </select>
+            </span>
+            <input type="text" name="mobileNumber" formControlName="mobileNumber">
+          </div>
+            <!-- error block -->
+            <div class="invalid-feedback" *ngIf="submitted && myForm['mobileNumber'].errors?.['maxLength']">
+              <sup>*</sup>Phone number must be 10 digit long
+            </div>
+            <div class="invalid-feedback" *ngIf="submitted && myForm['mobileNumber'].errors?.['required']">
+              <sup>*</sup>Please enter your phone number
+            </div>
+            <div class="invalid-feedback" *ngIf="submitted && myForm['mobileNumber'].errors?.['pattern']">
+              <sup>*</sup>Please enter valid phone number
+            </div>
+        </div>
+      </div>
+      <div class="inputs-wrapper custom-flex">
+        <label>South African Identity Number</label>
+        <input type="text" name="identityNumber" formControlName="identityNumber">
+        <!-- error block -->
+        <div class="invalid-feedback" *ngIf="submitted && myForm['identityNumber'].errors?.['required']">
+          <sup>*</sup>Please enter your identity number
+        </div>
+        <div class="invalid-feedback" *ngIf="submitted && myForm['identityNumber'].errors?.['pattern']">
+          <sup>*</sup>enter valid identity number
+        </div>
+      </div>
+
+      <div class="inputs-wrapper space-flex">
+        <div class="input-field custom-input-field">
+          <label>Physical Address</label>
+          <input type="text" name="addressLine1" placeholder="Start Typing Your Address"  formControlName="addressLine1">
+        </div>
+        <div class="input-field text-content">
+          <mat-label>Reset</mat-label>
+          <mat-select formControlName="country" placeholder="Country">
+            <mat-option value="South Africa">South Africa</mat-option>
+            <mat-option value="India">India</mat-option>
+          </mat-select>
+        </div>
+      </div>
+
+      <div class="inputs-wrapper my-10">
+        <input type="text" name="addressLine2" placeholder="Address Line 2 (Optional)" formControlName="addressLine2">
+      </div>
+      <div class="inputs-custom">
+        <div class="input-field text-content">
+          <mat-select formControlName="city" placeholder="City">
+            <mat-option value="Alice">Alice</mat-option>
+            <mat-option value="Butterworth">Butterworth</mat-option>
+            <mat-option value="Butterworth">East London</mat-option>
+          </mat-select>
+        </div>
+
+        <div class="input-field text-content">
+          <mat-select formControlName="province" placeholder="Province">
+            <mat-option value="Eastern Cape">Eastern Cape</mat-option>
+            <mat-option value="Free State">Free State</mat-option>
+            <mat-option value="Nothern Cape">Nothern Cape</mat-option>
+            <mat-option value="Gauteng">Gauteng</mat-option>
+          </mat-select>
+        </div>
+
+        <div class="inputs-wrapper input-field">
+          <input type="text" name="postalCode" placeholder="Postal Code" formControlName="postalCode">
+        </div>
+      </div>
+      <div class="social-wrapper inputs-wrapper">
+        <label>Social Media Profiles</label>
+        <div class="social-link">
+          <div class="input-field read-wrapper">
+            <input type="text" class="read-text" value="www.linkedin.com/in/" readonly>
+            <input type="text" class="read-text-main" name="linkedinProfile" formControlName="linkedinProfile">
+          </div>
+          <div class="input-field read-wrapper">
+            <input type="text" class="read-text" value="www.facebook.com/" readonly>
+            <input type="text" class="read-text-main" name="facebookProfile" formControlName="facebookProfile">
+          </div>
+        </div>
+      </div>
+      <div class="inputs-wrapper custom-width">
+        <div class="input-field read-wrapper">
+          <input type="text" class="read-text" value="www.twitter.com/" readonly>
+          <input type="text" class="read-text-main" name="twitterProfile" formControlName="twitterProfile">
+        </div>
+      </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-button class="btn-cancel" mat-dialog-close>Cancel</button>
+      <button type="submit" mat-button class="btn-install" cdkFocusInitial>Save</button>
+    </mat-dialog-actions>
+  </form>
+</div>
