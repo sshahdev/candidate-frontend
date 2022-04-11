@@ -9,7 +9,6 @@ import { CandidateDialogComponent } from './candidate/candidate-dialog/candidate
 import {AngularMaterialModule} from "./angular-material/angular-material.module";
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { GooglePlaceModule } from "ngx-google-places-autocomplete";
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { GooglePlaceModule } from "ngx-google-places-autocomplete";
     AngularMaterialModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    GooglePlaceModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

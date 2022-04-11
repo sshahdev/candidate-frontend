@@ -7,15 +7,15 @@ import { CandidateDialogComponent } from "./candidate-dialog/candidate-dialog.co
   templateUrl: './candidate.component.html',
   styleUrls: ['./candidate.component.css']
 })
-export class CandidateComponent implements OnInit{
+export class CandidateComponent {
 
   constructor(
     private dialog: MatDialog,
   ) { }
 
-  ngOnInit(): void {
-    this.onCreate();
-  }
+  // ngOnInit(): void {
+  //   // this.onCreate();
+  // }
 
   onCreate(): void {
     let dialogRef = this.dialog.open(CandidateDialogComponent, {

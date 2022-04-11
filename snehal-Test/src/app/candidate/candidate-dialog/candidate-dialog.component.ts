@@ -14,7 +14,7 @@ export class CandidateDialogComponent implements OnInit {
   public phoneErrorMessage: any;
   public identityErrorMessage: any;
   candidateDetails = {} as ICandidateModel;
-  userAddress: string;
+  userAddress: string = '';
 
   candidateForm: FormGroup = new FormGroup({
     firstName: new FormControl('', [Validators.required, Validators.minLength(2), Validators.pattern('^[_A-z0-9]*((-|\s)*[_A-z0-9])*$')]),

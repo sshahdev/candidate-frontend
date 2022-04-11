@@ -2,8 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5655f81-f77c-40b2-8f42-6668f6e6ba68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/candidate-BE/src/candidates/dto/create-candidates.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/candidate-BE/src/candidates/dto/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/candidate-BE/src/candidates/identity-number-check.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/candidate-BE/src/candidates/schemas/candidate.schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/nest-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/candidates/candidates.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/candidates/candidates.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/candidates/candidates.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/candidates/candidates.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/candidates/candidates.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/candidates/dto/create-candidates.dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/candidates/dto/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/candidates/identity-number-check.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/candidates/schemas/candidate.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/test/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/test/jest-e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tsconfig.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/angular-material/angular-material.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/candidate/candidate-dialog/candidate-dialog.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/candidate/candidate-dialog/candidate-dialog.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/candidate/candidate-dialog/candidate-dialog.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/candidate/candidate-dialog/candidate-dialog.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/candidate/candidate.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/candidate/candidate.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/candidate/candidate.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/candidate/candidate.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/model/ICandidateModel.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/candidate-service.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/candidate-service.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/snehal-Test/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/snehal-Test/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snehal-Test/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/snehal-Test/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snehal-Test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/snehal-Test/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snehal-Test/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/snehal-Test/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snehal-Test/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/snehal-Test/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snehal-Test/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/snehal-Test/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snehal-Test/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/snehal-Test/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +87,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="27ZQHA7rIuynwKC0BKbpgxvRi29" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -66,11 +140,19 @@
       <option name="presentableId" value="Default" />
       <updated>1649525037835</updated>
       <workItem from="1649525039697" duration="1148000" />
-      <workItem from="1649680628548" duration="84000" />
+      <workItem from="1649680628548" duration="2101000" />
+      <workItem from="1649693978833" duration="31000" />
+      <workItem from="1649695816207" duration="306000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="776" y="370" width="424" height="484" key="FileChooserDialogImpl" timestamp="1649694007125">
+      <screen x="67" y="27" width="1853" height="1173" />
+    </state>
+    <state x="776" y="370" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1173@67.27.1853.1173" timestamp="1649694007125" />
   </component>
 </project>
